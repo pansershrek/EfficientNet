@@ -1,0 +1,14 @@
+{
+    "batch_size": 64,
+    "dataset": "cifar10",
+    "device": "cuda:2",
+    "lr": 0.003,
+    "epochs": 10,
+    "alpha": 1.2,
+    "beta": 1.1,
+    "gamma": 1.15,
+    "phi": 1,
+    "result_file": "result.txt",
+    "seed": 42,
+    "model_result_folder": "./"
+}

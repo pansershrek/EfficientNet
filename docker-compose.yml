@@ -1,0 +1,15 @@
+version: '2'
+services:
+  efficientnet:
+   build: ./
+   image: efficientnet_gleb
+   command: python3 main.py
+   volumes:
+    - /home/g-skiba/EfficientNet:/workdir
+   deploy:
+     resources:
+       reservations:
+         devices:
+           - capabilities: [gpu]
+volumes:
+     shared_site:
